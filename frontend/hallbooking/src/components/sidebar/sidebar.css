@@ -1,0 +1,101 @@
+/* Sidebar Button */
+.nav-btn {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: #000; /* Default color */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  transition: color 0.3s ease;
+}
+
+.nav-btn.open {
+  color: #fff; /* White color when sidebar is open */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color:#122f39;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 998;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Sidebar Links */
+.sidebar ul li {
+  padding: 0; /* Remove padding from li */
+}
+
+.sidebar ul li a {
+  display: block; /* Make the link a block element */
+  padding: 15px 25px; /* Add padding for spacing */
+  width: 100%; /* Ensure the link spans the full width */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+  background-color:  rgba(255, 255, 255, 0.1); 
+}
+
+/* Logo and BIT Text */
+.sidebarlogo-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 35px;
+  left: 70px;
+}
+
+.sidebarbit-logo {
+  width: 40px; /* Adjust logo size */
+  height: auto;
+  margin-right: 10px;
+}
+
+.sidebarbit-text {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Logout button at the bottom */
+.sidebar ul li:last-child {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+/* Transition for smooth effect */
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul li {
+  transition: all 0.3s;
+}

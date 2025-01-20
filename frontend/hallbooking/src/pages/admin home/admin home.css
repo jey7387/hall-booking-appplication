@@ -1,0 +1,69 @@
+/* adminhome.css */
+.adminhome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  .bit-logo-center {
+    text-align: center;
+  }
+  
+  .bit-logo-word {
+    max-width: 100%;
+    height: auto;
+  }
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap:150px;
+    width: 80%;
+    margin-top: 40px;
+  }
+  
+  .option-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+   
+  }
+  
+  .option-box:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .option-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .option-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Add responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .options-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

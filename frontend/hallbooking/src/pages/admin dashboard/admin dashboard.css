@@ -1,0 +1,79 @@
+body {
+  font-family: 'Times New Roman', serif;
+  background:  #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-dashboard-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Times New Roman', serif;
+}
+
+.dashboard-title {
+  text-align: center;
+  background-color:  #083d51;
+  color: white;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #083d51;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.delete-button {
+  background-color: #ed2009;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #857d85;
+}
+.back-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back-icon:hover {
+  color: #0056b3;
+}
